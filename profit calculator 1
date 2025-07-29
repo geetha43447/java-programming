@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int copies,cost,acost;
+        Scanner sc=new Scanner(System.in);
+        copies=sc.nextInt();
+        cost=sc.nextInt();
+        acost=sc.nextInt();
+        float res=((copies*cost)-(copies*acost))-100;
+        System.out.print("Number of copies sold:"+copies+"\nCost of each copy:"+cost+"\nCost spent by agency on each newspaper:"+acost+"\nThe profit obtained is Rs.");
+        System.out.printf("%.2f",res);
+    }
+}
