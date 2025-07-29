@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int bs=sc.nextInt();
+        double gs;
+        if(bs<15000)  gs=bs+(0.15*bs)+(0.9*bs);
+        else    gs=bs+5000+(0.98*bs);
+        System.out.printf("%.2f",gs);
+    }
+}
