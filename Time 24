@@ -8,14 +8,10 @@ public class Solution {
         int h=sc.nextInt();
         int m=sc.nextInt();
         int s=sc.nextInt();
-        while(s>=60) {
-            m++;
-            s-=60;
-        }
-        while(m>=60) {
-            h++;
-            m-=60;
-        }
+        m=m+(s/60);
+        s=s%60;
+        h=h+(m/60);
+        m=m%60;
         System.out.println("Total Number of hours is "+h+"\nTotal Number of minutes is "+m+"\nTotal Number of seconds is "+s);
     }
 }
