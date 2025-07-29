@@ -7,8 +7,7 @@ public class Solution {
         Scanner sc=new Scanner(System.in);
         int bs=sc.nextInt();
         double gs;
-        if(bs<15000)  gs=bs+(0.15*bs)+(0.9*bs);
-        else    gs=bs+5000+(0.98*bs);
+        gs=(bs<15000) ? bs+(0.15*bs)+(0.9*bs):bs+5000+(0.98*bs);   
         System.out.printf("%.2f",gs);
     }
 }
