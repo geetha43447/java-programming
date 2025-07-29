@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        float v1=sc.nextFloat();
+        int v2=sc.nextInt();
+        int v3=sc.nextInt();
+        int v4=sc.nextInt();
+        System.out.println((int)Math.floor(v1)+"\n"+(int)Math.ceil(v1)+"\n"+(int)Math.sqrt(v2)+"\n"+(int)Math.pow(v3,v4));
+    }
+}
