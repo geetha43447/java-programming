@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String n=sc.next();
+        int a=sc.nextInt();
+        int c=sc.nextInt();
+        System.out.println("Name of the Student:"+n);
+        if((a==1 && c>70) || ((a==2 || a==1) && c>75)) System.out.println(n+" is Eligible for Placement");
+        else System.out.println(n+" is Not Eligible for Placement");
+    }
+}
