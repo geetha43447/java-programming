@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        char op=sc.next().charAt(0);
+        switch(op) {
+            case '+':
+                float a=(float)num1+(float)num2;
+                System.out.printf("Addition of two number is %.1f",a);
+                break;
+            case '-':
+                float b=(float)num1-(float)num2;
+                System.out.printf("Subtraction of two number is %.1f",b);
+                break;
+            case '*':
+                float c=(float)num1*(float)num2;
+                System.out.printf("Multiplication of two number is %.1f",c);
+                break;
+            case '/':
+                float d=(float)num1/(float)num2;
+                System.out.printf("Division of two number is %.1f",d);
+                break;
+            case '%':
+                float e=(float)num1%(float)num2;
+                System.out.printf("Modulo of two number is %.1f",e);
+                break;
+            default:
+                System.out.println("Invalid Input");
+        }
+    }
+}
