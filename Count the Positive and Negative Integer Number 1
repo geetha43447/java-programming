@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++) {
+            arr[i]=sc.nextInt();
+        }
+        float pos=0,neg=0;
+        for(int i=0;i<n;i++) {
+            if(arr[i]>0) pos++;
+            else neg++;
+        }
+        System.out.printf("Count of Positive Integer is %.2f\nCount of Negative Integer is %.2f",pos,neg);
+    }
+}
