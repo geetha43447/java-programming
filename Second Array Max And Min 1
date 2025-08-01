@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt(),x=0;
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++) {
+            arr[i]=sc.nextInt();
+        }
+        Arrays.sort(arr);
+        if((n-1)%2==0) {
+            n-=3;
+            x=arr[n]+arr[3];        
+        }
+        else {
+            n-=2;
+            x=arr[n]+arr[2];
+        }
+        System.out.println("Sum="+x);
+    }
+}
